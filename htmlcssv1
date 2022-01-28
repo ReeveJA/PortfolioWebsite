@@ -1,0 +1,122 @@
+--HTML script--
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reeve's Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+         <div class="sidebar">
+            Reeve's Logo
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Projects</li>
+                    <li>CV</li>
+                </ul>
+            </nav>
+         </div> 
+        <div class="main">
+            <div class="infoContainer">
+               <div class="devInfo">
+                    <div class="hello">Hi I am</div>   
+                    <div class="name">Reeve</div>
+                    <div class="about">Certified Data Analyst, MBA Graduate, Curious Coder, Part-time Forex Trader and Full-time Knowledge Seeker</div>
+                    <div class="buttons">
+                        <button>Download CV</button>
+                        <button>Contact Me</button> 
+                        <button type=“button”>
+                         <a target="_blank" href="https://www.linkedin.com/in/reevejonathanaranha">LinkedIn</a>
+                        </button>          
+                    </div>
+                </div>
+               <div class="devPic"><img src="portfoliopic.png" alt="Reeve" ></div> 
+            </div>
+        </div>
+</div>
+</body>
+</html>
+
+
+--CSS script--
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Nanum+Gothic&display=swap');
+
+
+*{
+   margin: 0;
+   padding: 0; 
+}
+
+.sidebar{
+   background-color: rgb(175, 174, 174);
+   width: 15vw;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   height: 100vh;
+}
+
+.sidebar nav{
+    padding: 15px;
+}
+
+.sidebar nav li{
+    list-style: none;
+    font-size: 30px;
+    padding: 33px 0;
+}
+
+.main{
+    /*background-color: rgba(236, 245, 255, 0.918);*/
+    width: 90vw;   
+}
+
+.container{
+  display: flex;
+}
+
+.infoContainer{
+    /*background-color: grey;*/
+    height: 58vh;
+    width: 80vw;
+    margin: 144px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.devInfo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Dongle', sans-serif;
+}
+
+.devPic img{
+    height: 58vh;
+}
+
+.hello{
+   font-size: 60px; 
+   font-family: 'Dongle', sans-serif;
+}
+
+.name{
+    font-size: 75px;
+    font-weight: bold;
+    font-family: 'Dongle', sans-serif;
+}
+
+.about{
+    font-size: 35px;
+    font-family: 'Dongle', sans-serif;
+}
+
+.buttons button{
+    padding: 10px;
+}
